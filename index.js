@@ -12,6 +12,12 @@ export default class React360Workshop extends React.Component {
     counter: 0
   };
 
+  _incrementCounter = () => {
+    this.setState({
+      counter: (this.state.counter += 1)
+    });
+  };
+
   render() {
     return (
       <View style={styles.panel}>
