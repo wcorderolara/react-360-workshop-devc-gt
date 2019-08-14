@@ -4,16 +4,29 @@ import {
   StyleSheet,
   Text,
   View,
+  VrButton
 } from 'react-360';
 
-export default class Hello360 extends React.Component {
+export default class React360Workshop extends React.Component {
+  state = {
+    counter: 0
+  };
+
   render() {
     return (
       <View style={styles.panel}>
         <View style={styles.greetingBox}>
           <Text style={styles.greeting}>
-            Welcome to React 360
+            Hello! members of Facebook DevC Guatemala
           </Text>
+        </View>
+
+        <View style={styles.greetingBox}>
+          <VrButton onClick={this._incrementCounter}>
+            <Text style={styles.greeting}>
+              You've Clicked me {this.state.counter} times.
+            </Text>
+          </VrButton>
         </View>
       </View>
     );
@@ -40,4 +53,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('Hello360', () => Hello360);
+AppRegistry.registerComponent('React360Workshop', () => React360Workshop);
