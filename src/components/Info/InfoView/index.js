@@ -8,7 +8,7 @@ import {
 import styles from './styles';
 
 const InfoView = ({name, onClick, open}) => (
-    <view style={styles.root}>
+    <View style={styles.root}>
         <Text style={[
             styles.rootText,
             { opacity: open ? 1 : 0}
@@ -21,7 +21,7 @@ const InfoView = ({name, onClick, open}) => (
         ]} onClick={onClick}>
             
         </VrButton>
-    </view>
+    </View>
 );
 
 InfoView.PropTypes = {
