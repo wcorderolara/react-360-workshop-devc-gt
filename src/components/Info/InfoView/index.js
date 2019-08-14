@@ -45,7 +45,7 @@ export default class InfoView extends Component {
 
                 <VrButton style={[
                     styles.rootButton,
-                    {background: open ? 'red' : 'green'}
+                    {backgroundColor: open ? 'red' : 'green'}
                 ]} onClick={onClick}>    
                 </VrButton>
             </View>
