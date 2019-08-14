@@ -64,4 +64,4 @@ AppRegistry.registerComponent('Info', () => Info);
 //   },
 // });
 
-// AppRegistry.registerComponent('React360Workshop', () => React360Workshop);
+// AppRegistry.registerComponent('React360Workshop', () => );
