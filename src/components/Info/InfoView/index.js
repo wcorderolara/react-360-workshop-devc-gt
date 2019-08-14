@@ -17,7 +17,7 @@ const InfoView = ({name, onClick, open}) => (
         </Text>
         <VrButton style={[
             styles.rootButton,
-            {background: open ? 'red' : 'green'}
+            {backgroundColor: open ? 'red' : 'green'}
         ]} onClick={onClick}>
             
         </VrButton>
